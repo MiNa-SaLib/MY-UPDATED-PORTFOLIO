@@ -1,0 +1,83 @@
+ul{
+    list-style: none;
+}
+.hello{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+  .mouse {
+    animation-name: mouseOpacity;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes mouseOpacity {
+    25% {
+      opacity: 0;
+    }
+  
+    75% {
+      opacity: 1;
+    }
+  }
+
+  .hello ul {
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  .hello ul li a {
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 15px;
+    color:#00a6ff ;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hello ul li:hover a {
+    transform: scale3d(1.5, 1.5, 1.5);
+    color: black;
+  }
+  .edit {
+    width: 100%;
+    color: #00a6ff;
+    font-weight: 900;
+  }
+  .hello .name,
+  h4 {
+    color: #00a6ff;
+    font-weight: 900;
+  }
+  
+  
+  .allMe {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 89vh;
+  }
+  .allMe img {
+    width: 400px;
+    border-radius: 50%;
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+   
+    .allMe {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .allMe img {
+        width: 300px;
+        border-radius: 50%;
+        height: 300px;
+      }
+  }

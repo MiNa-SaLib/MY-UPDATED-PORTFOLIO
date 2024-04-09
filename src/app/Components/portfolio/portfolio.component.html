@@ -1,0 +1,262 @@
+<div class="container">
+  <div class="porto container">
+    <div><i class="fa-solid fa-folder-open"></i></div>
+    <div>
+      <h1>Take a tour in my projects</h1>
+      <p>Here you'll find some of my projects and applications</p>
+      <a class="btn btn-primary">See Projects</a>
+    </div>
+  </div>
+  <div class="hr">
+    <hr id="projects" />
+    <h6>Projects</h6>
+  </div>
+  <div class="proj container">
+    <div id="myBtnContainer">
+      <button class="btn" [class.active]="all" (click)="showAll()">
+        Show all
+      </button>
+      <button class="btn" [class.active]="HC && !all" (click)="showHC()">
+        HTML & CSS
+      </button>
+      <button class="btn" [class.active]="js && !all" (click)="showJs()">
+        Java Script
+      </button>
+    </div>
+
+    <div class="categories">
+      <div class="filterDiv html&css" *ngIf="HC || all">
+        <img src="assets/projs/animation.jpg" alt="" />
+        <p>3d Animation face</p>
+        <div>
+          <a class="btn btn-primary" href="https://github.com/MiNa-SaLib/face"
+            >Code</a
+          >
+          <a class="btn btn-primary" href="https://mina-salib.github.io/face/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv html&css" *ngIf="HC || all">
+        <img src="assets/projs/first.jpg" alt="" />
+        <p>Show and sell things</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/myfirst"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/myfirst/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv html&css" *ngIf="HC || all">
+        <img src="assets/projs/kasper.jpg" alt="" />
+        <p>Kasper</p>
+        <div>
+          <a class="btn btn-primary" href="https://mina-salib.github.io/k3sper/"
+            >Code</a
+          >
+          <a class="btn btn-primary" href="https://github.com/MiNa-SaLib/k3sper"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv html&css" *ngIf="HC || all">
+        <img src="assets/projs/landing.jpg" alt="" />
+        <p>Awesome landing page</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/landing"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/landing/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv html&css" *ngIf="HC || all">
+        <img src="assets/projs/loding.jpg" alt="" />
+        <p>A woesome loading</p>
+        <div>
+          <a class="btn btn-primary" href="https://github.com/MiNa-SaLib/loding"
+            >Code</a
+          >
+          <a class="btn btn-primary" href="https://mina-salib.github.io/loding/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/agecalc.jpg" alt="" />
+        <p>Age Calculator</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/ageCalculator"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/ageCalculator/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/bank.jpg" alt="" />
+        <p>Basic banking system</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/sparksBank"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/sparksBank/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/calc.jpg" alt="" />
+        <p>Simple calculator</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/calculator"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/calculator/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/convert.jpg" alt="" />
+        <p>Convert images to PDF</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/CC-NOV-WEB-DEVELOPMENT"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/CC-NOV-WEB-DEVELOPMENT/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/healthy.jpg" alt="" />
+        <p>Healthy food</p>
+        <div>
+          <a class="btn btn-primary" href="https://github.com/MiNa-SaLib/healty"
+            >Code</a
+          >
+          <a class="btn btn-primary" href="https://mina-salib.github.io/healty/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/memoryGame.jpg" alt="" />
+        <p>Memory game</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/memory-game"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/memory-game/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/notes.jpg" alt="" />
+        <p>Your notes</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/dailynotes"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/dailynotes/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/Quize.jpg" alt="" />
+        <p>Quiz</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/codealpha_Task1"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/codealpha_Task1/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/recaptcha.jpg" alt="" />
+        <p>Form with recaptcha</p>
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/MiNa-SaLib/codealpha_Task2"
+            >Code</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://mina-salib.github.io/codealpha_Task2/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/slider.jpg" alt="" />
+        <p>A woesome photo slider</p>
+        <div>
+          <a class="btn btn-primary" href="https://github.com/MiNa-SaLib/slider"
+            >Code</a
+          >
+          <a class="btn btn-primary" href="https://mina-salib.github.io/slider/"
+            >View</a
+          >
+        </div>
+      </div>
+      <div class="filterDiv js" *ngIf="js || all">
+        <img src="assets/projs/todo.jpg" alt="" />
+        <p>To do list</p>
+        <div>
+          <a class="btn btn-primary" href="https://github.com/MiNa-SaLib/todo"
+            >Code</a
+          >
+          <a class="btn btn-primary" href="https://mina-salib.github.io/todo/"
+            >View</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

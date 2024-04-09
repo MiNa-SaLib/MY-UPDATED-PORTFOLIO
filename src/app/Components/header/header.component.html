@@ -1,0 +1,70 @@
+<nav class="allNav navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/home']"
+      ><h2>Portfol<span>io</span></h2></a
+    >
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="justify-content-end collapse navbar-collapse"
+      id="collapsibleNavId"
+    >
+      <ul class="navbar-nav mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/portfolio']"
+            routerLinkActive="active"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/skills']"
+            routerLinkActive="active"
+            >Skills</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/personal']"
+            routerLinkActive="active"
+            >Personal</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/experience']"
+            routerLinkActive="active"
+            >Experience</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/contacts']"
+            routerLinkActive="active"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

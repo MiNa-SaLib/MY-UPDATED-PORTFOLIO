@@ -1,0 +1,165 @@
+.contactMe {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 96vh;
+}
+
+.contactMe div h1 {
+    color: #00a6ff;
+}
+
+.contactMe div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactMe div:nth-child(3) i {
+    color: #00a6ff;
+    margin-top: 20px;
+    font-size: 25px;
+    animation-name: up;
+    animation-duration: .9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.contactMe>img {
+    width: 250px;
+}
+
+.mysocial {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 6px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mysocial a img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.mysocial a span {
+    width: 60px;
+    font-size: 20px;
+
+}
+
+.mysocial a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #fbfafa;
+    padding: 10px;
+    text-decoration: none;
+    color: #00a6ff;
+    transition: .5s;
+    box-shadow: 0px 0px 5px 2px #6c757d1d;
+
+}
+
+.mysocial a:hover {
+    box-shadow: 0px 0px 10px 0px #6c757d;
+}
+
+
+
+.visit {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 150px;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.visit a {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: .4s;
+
+}
+
+.visit a:hover {
+    box-shadow: 0px 0px 10px 0px #6c757d;
+}
+
+
+.visit img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+.visit::-webkit-scrollbar {
+    height: 5px;
+}
+
+@media (max-width: 767px) {
+    .visit {
+
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: unset;
+        gap: 5%;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: 150px;
+        background-color: #eee;
+        padding: 0 6%;
+    }
+
+
+    .visit img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+}
+
+.hr {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hr hr {
+    width: 90%;
+}
+
+.hr h6 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 5px;
+}
